@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('wishlists', function (Blueprint $table) {
             $table->id();
             $table->integer("customer_id")->default(0);
+            $table->integer("category_id")->default(0);
             $table->integer("service_id")->default(0);
             $table->text("metadata")->nullable();
             $table->timestamps();

@@ -46,9 +46,11 @@ Route::group(['prefix' => 'auth', "middleware" => "guest"], function () {
             Route::post('/logout', 'logout')->name("logout");
 
             Route::post('/wishList/add',[\App\Http\Controllers\Api\wishlistController::class,'add']);
+            Route::get('/wishlist',[\App\Http\Controllers\Api\wishlistController::class,'getWishlist']);
+
         });
     });
-
+    Route::post('/wishlist/delete',[\App\Http\Controllers\Api\wishlistController::class,'delete']);
     // Agency Routes
     Route::group(['prefix' => 'agency', 'as' => 'agency.', "controller" => AgencyController::class], function () {
         // guest route

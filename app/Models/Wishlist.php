@@ -28,6 +28,7 @@ class Wishlist extends Model
     protected $fillable = [
         'service_id',
         'customer_id',
+        'category_id',
         'metadata'
     ];
 

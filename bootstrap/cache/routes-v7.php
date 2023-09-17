@@ -294,6 +294,45 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/api/v1/auth/customer/wishlist' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'customer.generated::u4ysQdxOlVnwPN6n',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/v1/auth/wishlist/delete' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::etqwnq0cCKLn318y',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/api/v1/auth/agency/login' => 
       array (
         0 => 
@@ -1152,6 +1191,82 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'customer.generated::u4ysQdxOlVnwPN6n' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/v1/auth/customer/wishlist',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'guest',
+          2 => 'customer',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Api\\wishlistController@getWishlist',
+        'controller' => 'App\\Http\\Controllers\\Api\\wishlistController@getWishlist',
+        'as' => 'customer.generated::u4ysQdxOlVnwPN6n',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/auth/customer',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::etqwnq0cCKLn318y' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/v1/auth/wishlist/delete',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+          1 => 'guest',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Api\\wishlistController@delete',
+        'controller' => 'App\\Http\\Controllers\\Api\\wishlistController@delete',
+        'namespace' => NULL,
+        'prefix' => 'api/v1/auth',
+        'where' => 
+        array (
+        ),
+        'as' => 'generated::etqwnq0cCKLn318y',
       ),
       'fallback' => false,
       'defaults' => 
