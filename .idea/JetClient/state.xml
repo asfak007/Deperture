@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="id" value="afd11e12-da29-44b5-bdc9-d7a7639e94b0" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="first_name" />
+                    <option name="value" value="dfasf" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="last_name" />
+                    <option name="value" value="hdfhsghhdf" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="username" />
+                    <option name="value" value="erwetert" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="phone" />
+                    <option name="value" value="01752334603" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="email" />
+                    <option name="value" value="sajalasfakrobin@gmail.com" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="password" />
+                    <option name="value" value="12345678" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://127.0.0.1:8000/api/v1/auth/customer/register?first_name=dfasf&amp;last_name=hdfhsghhdf&amp;username=erwetert&amp;phone=01752334603&amp;email=sajalasfakrobin@gmail.com&amp;password=12345678" />
+            </requestState>
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <iK>
+                      <option name="token" value="qQVBC8chddaKuDq9lrXfJW5fXllNaKKGQz2AjqX9gs9lQ7HoT89edmiPmEJlWSY0cEAwf6" />
+                    </iK>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="id" value="c143a508-4f39-40fd-afc1-7d72893d029b" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft 1" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="service_id" />
+                    <option name="value" value="1" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://127.0.0.1:8000/api/v1/auth/customer/wishList/add?service_id=1" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="6b18021d-0301-42bb-b041-56e97a6b5e88" />
+  </component>
+</project>
